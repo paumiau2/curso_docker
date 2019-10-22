@@ -1,0 +1,11 @@
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.exe
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.deps.json
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.runtimeconfig.json
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.runtimeconfig.dev.json
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.dll
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\bin\Debug\netcoreapp3.0\myapp.pdb
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\obj\Debug\netcoreapp3.0\myapp.csprojAssemblyReference.cache
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\obj\Debug\netcoreapp3.0\myapp.AssemblyInfoInputs.cache
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\obj\Debug\netcoreapp3.0\myapp.AssemblyInfo.cs
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\obj\Debug\netcoreapp3.0\myapp.dll
+C:\Users\paubl\Desktop\Docker\app.net\ejemplo.net\app\obj\Debug\netcoreapp3.0\myapp.pdb

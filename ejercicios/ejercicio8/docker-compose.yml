@@ -1,0 +1,33 @@
+version: "3"
+services:
+        database:
+                image: mariadb:latest
+                container_name: Cont_mysql
+                environment:
+                        MYSQL_ROOT_PASSWORD: 'wordpress'
+                        MYSQL_DATABASE: 'wordpress'
+                        MYSQL_USER: 'wordpress'
+                        MYSQL_PASSWORD: 'wordpress'
+                volumes:
+                        - DATASTORE_DB:/var/lib/mysql
+                ports:
+                        - 3336:3336
+                networks:
+                        - produccion
+        web:
+                image: wordpress:latest
+                container_name: Cont_wordpress
+                volumes:
+                        - DATASTORE_WEB:/var/www/html
+                ports:
+                        - 80:80
+                networks:
+                        - produccion
+volumes:
+        DATASTORE_DB:
+                external: true
+        DATASTORE_WEB:
+                external: true
+networks:
+        produccion:
+                external: true
