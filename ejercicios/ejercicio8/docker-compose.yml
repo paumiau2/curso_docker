@@ -9,25 +9,31 @@ services:
                         MYSQL_USER: 'wordpress'
                         MYSQL_PASSWORD: 'wordpress'
                 volumes:
-                        - DATASTORE_DB:/var/lib/mysql
+                        - datastoredb:/var/lib/mysql
                 ports:
                         - 3336:3336
                 networks:
                         - produccion
+                restart: always
         web:
                 image: wordpress:latest
                 container_name: Cont_wordpress
+                depends_on:
+                        - database
+                environment:
+                        WORDPRESS_DB_HOST: 'database'
+                        WORDPRESS_DB_USER: 'wordpress'
+                        WORDPRESS_DB_PASSWORD: 'wordpress'
+                        WORDPRESS_DB_NAME: 'wordpress'
                 volumes:
-                        - DATASTORE_WEB:/var/www/html
+                        - datastoreweb:/var/www/html
                 ports:
                         - 80:80
                 networks:
                         - produccion
+                restart: always
 volumes:
-        DATASTORE_DB:
-                external: true
-        DATASTORE_WEB:
-                external: true
+        datastoredb:
+        datastoreweb:
 networks:
         produccion:
-                external: true
